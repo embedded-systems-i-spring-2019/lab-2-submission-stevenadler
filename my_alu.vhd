@@ -30,7 +30,7 @@ begin
                 end if;
             when "0110" => output <= a(2 downto 0) & "0";
             when "0111" => output <= "0" & a(3 downto 1);
-            when "1000" => output <= "0" & a(3 downto 1);
+            when "1000" => output <= a(3) & a(3 downto 1);
             when "1001" => output <= not a;
             when "1010" => output <= a and b;
             when "1011" => output <= a or b;
