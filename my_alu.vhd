@@ -20,7 +20,7 @@ begin
             when "0000" => output <= std_logic_vector(unsigned(a)+unsigned(b));
             when "0001" => output <= std_logic_vector(unsigned(a)-unsigned(b));
             when "0010" => output <= std_logic_vector(unsigned(a)+1);
-            when "0011" => output <= a;
+            when "0011" => output <= std_logic_vector(unsigned(a)-1);
             when "0100" => output <= std_logic_vector(0-unsigned(a));
             when "0101" => 
                 if (a>b) then

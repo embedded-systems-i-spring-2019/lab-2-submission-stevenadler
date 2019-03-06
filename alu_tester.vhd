@@ -31,10 +31,10 @@ architecture Behavioral of alu_tester is
     signal b_val      : std_logic_vector(3 downto 0) := (others => '0');
     signal opcode_val : std_logic_vector(3 downto 0) := (others => '0');
     signal output_val : std_logic_vector(3 downto 0) := (others => '0');
-    signal dbnc_0  : std_logic := '0'; 
-    signal dbnc_1  : std_logic := '0'; 
-    signal dbnc_2  : std_logic := '0'; 
-    signal dbnc_3  : std_logic := '0'; 
+    signal dbnc_0     : std_logic := '0'; 
+    signal dbnc_1     : std_logic := '0'; 
+    signal dbnc_2     : std_logic := '0'; 
+    signal dbnc_3     : std_logic := '0'; 
     
 begin         
     process (clk) 
